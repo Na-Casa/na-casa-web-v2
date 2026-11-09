@@ -2733,7 +2733,7 @@ p {
   font-size: clamp(1.25rem, 3vw, 2rem);
 }
 
-.plans-catalog-heading__consultation {
+/* .plans-catalog-heading__consultation {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -2756,7 +2756,7 @@ p {
 
 .plans-catalog-heading__consultation-details span {
   white-space: nowrap;
-}
+} */
 
 .plans-catalog-heading > p:last-child {
   max-width: 62ch;
