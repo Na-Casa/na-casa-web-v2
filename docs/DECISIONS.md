@@ -164,3 +164,11 @@ Los metadatos públicos y los archivos de indexación deben usar `https://www.so
 
 **Razonamiento:**
 El dominio definitivo, la redirección desde el dominio raíz, GitHub Pages y HTTPS fueron confirmados durante la preparación para producción.
+
+## DEC-009 — Cuidado nocturno como servicio independiente
+
+**Estado:** Confirmada para mantenimiento.
+
+El servicio «Especialista en cuidado nocturno» se presenta después de los cuatro planes, fuera de los grupos Bienvenida y Creciendo, con detalle en `asistente-nocturna.html`. Ofrece cuidado directo del bebé durante sus dos primeros meses, de 21:00 a 7:00, por 150 € por noche completa. Se diferencia de los planes nocturnos de acompañamiento y orientación familiar.
+
+Los datos comerciales no confirmados quedan fuera de la interfaz. Al publicar definitivamente la nueva página deberá incorporarse al sitemap; esta tarea de preview no modifica los archivos de indexación ni la configuración de producción.

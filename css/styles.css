@@ -2733,31 +2733,6 @@ p {
   font-size: clamp(1.25rem, 3vw, 2rem);
 }
 
-/* .plans-catalog-heading__consultation {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem 1.5rem;
-  margin-top: 1rem;
-  padding: 0.875rem var(--space-card);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-small);
-  background: var(--color-surface);
-  color: var(--color-text);
-  font-size: 1rem;
-}
-
-.plans-catalog-heading__consultation-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
-}
-
-.plans-catalog-heading__consultation-details span {
-  white-space: nowrap;
-} */
-
 .plans-catalog-heading > p:last-child {
   max-width: 62ch;
 }
@@ -2916,6 +2891,31 @@ p {
   margin-top: 1.35rem;
 }
 
+.additional-services__heading {
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  padding-bottom: var(--space-card);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.additional-services__heading p {
+  max-width: 62ch;
+}
+
+.additional-services__copy {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.additional-services .plan-card__pricing > .plan-card__age {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.additional-services .plan-card__pricing > .additional-services__price {
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
 .plan-detail-hero {
   padding-block: clamp(2.75rem, 6vw, 5rem);
   background: var(--color-surface-alt);
@@ -3025,6 +3025,13 @@ p {
   text-align: right;
 }
 
+.plan-detail-summary--care > div {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.25rem;
+}
+
+.plan-detail-summary--care dd { text-align: left; }
+
 .plan-detail-content-section {
   padding-block: clamp(3.5rem, 7vw, 5.75rem);
 }
@@ -3088,6 +3095,56 @@ p {
   border-radius: 50%;
   background: var(--color-sage);
   transform: translateY(-50%);
+}
+
+/* Ajustes de lectura exclusivos del servicio de cuidado nocturno. */
+.plan-detail-content--care > section.plan-detail-block {
+  padding-top: 0;
+}
+
+.plan-detail-content--care > section.plan-detail-block > h2 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+}
+
+.plan-detail-content--care > section.plan-detail-block > h2 + p,
+.plan-detail-content--care > section.plan-detail-block > h2 + ul {
+  margin-top: 0;
+}
+
+.plan-detail-content--care > section.plan-detail-block > h2 + ul > li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.plan-detail-content--care > section.plan-detail-block > h2 + ul > li:first-child::before {
+  top: 0.68rem;
+}
+
+
+.plan-detail-content--care .plan-detail-block--care-audience {
+  grid-column: 1 / -1;
+}
+
+.plan-detail-content--care .plan-detail-block--care-flow > p:not(.section-label) {
+  margin-bottom: 1.25rem;
+}
+
+.plan-detail-content--care .plan-detail-block--care-flow > .plan-detail-list {
+  margin-block: 1.25rem;
+}
+
+@media (min-width: 821px) {
+  .plan-detail-content--care .plan-detail-block--care-audience .plan-detail-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--gap-layout);
+  }
+
+  .plan-detail-content--care .plan-detail-block--care-audience .plan-detail-list li:last-child {
+    border-bottom: 0;
+  }
 }
 
 .plan-detail-pricing-section {
